@@ -1,7 +1,3 @@
-.service {
-  margin-bottom: 183px;
-  margin-bottom: 120px;
-}
 .container-service {
   padding-left: 72px;
 }
@@ -40,30 +36,45 @@
   gap: 20px;
   list-style-type: none;
   margin-top: 48px !important;
-  margin-bottom: 50px !important;
+  padding-bottom: 50px !important;
 }
 .service__nav-item {
   color: #000;
 }
-.form__input-tab-1:checked + .form__label-tab-1 {
+.form__input-tab-1:checked + .form__img-box > .form__label-tab-1 {
   background-color: #1f1f1f;
   color: #fff;
 }
-.form__input-tab-2:checked + .form__label-tab-2 {
+.form__input-tab-2:checked + .form__img-box > .form__label-tab-2 {
   background-color: #1f1f1f;
   color: #fff;
 }
-.form__input-tab-3:checked + .form__label-tab-3 {
+.form__input-tab-3:checked + .form__img-box > .form__label-tab-3 {
   background-color: #1f1f1f;
   color: #fff;
 }
-.form__input-tab-4:checked + .form__label-tab-4 {
+.form__input-tab-4:checked + .form__img-box > .form__label-tab-4 {
   background-color: #1f1f1f;
   color: #fff;
 }
-.form__input-tab-5:checked + .form__label-tab-5 {
+.form__input-tab-5:checked + .form__img-box > .form__label-tab-5 {
   background-color: #1f1f1f;
   color: #fff;
+}
+.form__input-tab-1:checked + .form__img-box > .car {
+  color: #ccc;
+}
+.form__input-tab-2:checked + .form__img-box > .car {
+  color: #ccc;
+}
+.form__input-tab-3:checked + .form__img-box > .car {
+  color: #ccc;
+}
+.form__input-tab-4:checked + .form__img-box > .car {
+  color: #ccc;
+}
+.form__input-tab-5:checked + .form__img-box > .car {
+  color: #ccc;
 }
 .form__label-tab-1 {
   position: relative;
@@ -77,15 +88,6 @@
   padding-left: 80px;
   background-color: #fff;
   padding-right: 30px;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 42%;
-    left: 18%;
-    width: 30px;
-    height: 12px;
-    background-image: url("../../images/suv-mashina.svg");
-  }
   &:hover {
     background-color: #eaeaea;
   }
@@ -102,15 +104,6 @@
   padding-left: 86px;
   background-color: #fff;
   padding-right: 30px;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 45%;
-    left: 18%;
-    width: 36px;
-    height: 10px;
-    background-image: url("../../images/biznes-mashina.svg");
-  }
   &:hover {
     background-color: #eaeaea;
   }
@@ -127,15 +120,6 @@
   padding-left: 86px;
   background-color: #fff;
   padding-right: 30px;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 45%;
-    left: 15%;
-    width: 36px;
-    height: 10px;
-    background-image: url("../../images/sport-mashina.svg");
-  }
   &:hover {
     background-color: #eaeaea;
   }
@@ -152,15 +136,6 @@
   padding-left: 103px;
   padding-right: 30px;
   background-color: #fff;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 45%;
-    left: 16%;
-    width: 53px;
-    height: 10px;
-    background-image: url("../../images/premium-mashina.svg");
-  }
   &:hover {
     background-color: #eaeaea;
   }
@@ -177,64 +152,43 @@
   padding-left: 83px;
   padding-right: 30px;
   background-color: #fff;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 42%;
-    left: 18%;
-    width: 33px;
-    height: 12px;
-    background-image: url("../../images/qulay-mashina.svg");
-  }
   &:hover {
     background-color: #eaeaea;
   }
 }
-// .service__inner-list-suv {
-//   transform: rotateY(180deg);
-//   position: absolute;
-//   backface-visibility: hidden;
-//   transition: all 0.3s ease-in-out;
-// }
-.service__inner-list-biznes {
-  transform: rotateY(180deg);
+.service__inner-list-suv {
+  transform: translateX(-1520px);
   position: absolute;
   backface-visibility: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+.service__inner-list-biznes {
+  transform: translateX(-1520px);
+  position: absolute;
+  backface-visibility: hidden;
+  transition: all 0.8s ease-in-out;
 }
 .service__inner-list-sportcar {
-  transform: rotateY(180deg);
+  transform: translateX(-1520px);
   position: absolute;
   backface-visibility: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 .service__inner-list-premium {
-  transform: rotateY(180deg);
+  transform: translateX(-1520px);
   position: absolute;
   backface-visibility: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 .service__inner-list-qulay {
-  transform: rotateY(180deg);
+  transform: translateX(-1520px);
   position: absolute;
   backface-visibility: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
-// #tab1:checked ~ .service__inner-list-suv {
-//   transform: rotateY(0);
-// }
-// #tab-2:checked ~ .service__inner-list-biznes {
-//   transform: rotateY(0);
-// }
-// #tab-3:checked ~ .service__inner-list-sportcar {
-//   transform: rotateY(0);
-// }
-// #tab-4:checked ~ .service__inner-list-premium {
-//   transform: rotateY(0);
-// }
-// #tab-5:checked ~ .service__inner-list-qulay {
-//   transform: rotateY(0);
-// }
+.menu--open {
+  transform: translateX(0);
+}
 .service__inner-list-suv {
   list-style-type: none;
   display: flex;
@@ -340,8 +294,10 @@
   border-radius: 6px;
   padding: 8px 20px;
   background-image: $linear;
+  transition: all 10s ease-in-out;
   &:hover {
     background-image: $linear-rewerse;
+    transition: all 1s ease-in-out;
   }
 }
 .service__item-suv-bottom-box-text {

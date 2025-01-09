@@ -8,6 +8,7 @@
   padding-left: 25px;
   padding-right: 25px;
   background-image: url("../../images/бг-hero.png");
+  background-size: cover;
   border-radius: 0 0 36px 36px;
 }
 .hero__inner-border-bottom {
@@ -170,17 +171,6 @@
   border: none;
   background: #f5f5f5;
 }
-// .hero__inner-rent-box-input::before {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 14px;
-//   height: 16px;
-//   background-image: url("../../images/date.svg");
-//   background-repeat: no-repeat;
-//   background-size: 14px 16px;
-// }
 .hero__inner-rent-box-form-middle {
   gap: 14px;
   margin-top: 11px;
@@ -200,10 +190,11 @@
   line-height: 125%;
   color: #fff;
   border: none;
-  background-image: $linear;
   border-radius: 10px;
   padding: 26px 34px;
+  background: $linear;
+  transition: all 1s ease-out;
   &:hover {
-    background-image: $linear-rewerse;
+    background: $linear-rewerse;
   }
 }

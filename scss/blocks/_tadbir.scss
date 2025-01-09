@@ -1,0 +1,140 @@
+.tadbir {
+  margin-top: 161px;
+}
+// .container__tadbir {
+//   padding-left: 57px;
+// }
+.tadbir_title {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 129%;
+  text-align: center;
+  margin: 0 auto;
+  color: #1f1f1f;
+  max-width: 1045px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.svg-divs {
+  display: inline-block;
+  position: absolute;
+  top: 65px;
+  left: 512px;
+}
+.tadbir_inner-item {
+  background-color: #fff;
+  border-radius: 20px;
+  max-width: 610px;
+  width: 100%;
+}
+
+.tadbir_inner-divs {
+  display: flex;
+  gap: 12px;
+}
+
+.tadbir_inner-item_divs {
+  position: relative;
+  padding: 10px 0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.tadbir_inner-item2 {
+  border-radius: 20px;
+  background-color: #fff;
+  max-width: 610px;
+  width: 100%;
+}
+
+.tadbir_inner-item_text1 {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 162%;
+  color: #989898;
+  max-width: 400px;
+  width: 100%;
+}
+
+.tadbir_inner-item_text2 {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 162%;
+  color: #989898;
+  max-width: 379px;
+  width: 100%;
+}
+
+.tadbir_inner-item_title1 {
+  margin-top: 50px;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: #1f1f1f;
+  max-width: 223px;
+  width: 100%;
+}
+
+.tadbir_inner-item_title2 {
+  margin-top: 50px;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: #1f1f1f;
+  max-width: 266px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 660px) {
+  .tadbir_title {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #1f1f1f;
+  }
+
+  .tadbir_inner-divs {
+    flex-direction: column;
+  }
+
+  .tadbir_inner-item_title1 {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    color: #1f1f1f;
+  }
+
+  .tadbir_inner-item_title2 {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    color: #1f1f1f;
+  }
+
+  .tadbir_inner-item_text1 {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    color: #9f9f9f;
+  }
+
+  .tadbir_inner-item_text2 {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    color: #9f9f9f;
+  }
+
+  .tadbir_inner-item_divs {
+    flex-direction: column;
+  }
+}
